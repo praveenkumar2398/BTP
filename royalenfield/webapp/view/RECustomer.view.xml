@@ -1,0 +1,85 @@
+<mvc:View xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    controllerName="ns.royalenfield.controller.RECustomer">
+    <Page id="customerPage">
+        <customHeader>
+            <Bar>
+                <contentMiddle>
+                    <!-- Centered Logo -->
+                    <Image
+                        src="{i18n>RELogo}"
+                        alt="Royal Enfield Logo"
+                        width="100%" height="100%" />
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+
+        <content>
+            <!-- FlexBox to organize the image and form horizontally -->
+            <FlexBox direction="Row" justifyContent="SpaceBetween" alignItems="Start"
+                class="sapUiResponsiveMargin">
+                <!-- Image Section -->
+                <VBox width="250%" height="200%" alignItems="Center">
+                    <Image
+                        src="https://store.royalenfield.com/media/mageplaza/bannerslider/banner/image/n/e/new_user_ragestration_page_1500_x_950_150_kb_1_.jpg"
+                        width="100%"
+                        alt="Registration Page Image"
+                    />
+                </VBox>
+
+                <!-- Form Section -->
+                <VBox width="60%">
+                    <f:SimpleForm id="customerForm"
+                        title="SETUP NEW ACCOUNT"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false">
+                        <f:content>
+                            <Label text="First Name" required="true" />
+                            <Input id="firstName" placeholder="Enter First Name" />
+
+                            <Label text="Last Name" required="true" />
+                            <Input id="lastName" placeholder="Enter Last Name" />
+
+                            <Label text="Email" required="true" />
+                            <Input id="email" placeholder="Enter Email" type="Email" />
+
+                            <Label text="Mobile Number" required="true" />
+                            <Input id="mobileNumber" placeholder="Enter Mobile Number" type="Tel" />
+
+                            <Label text="Date of Birth" required="true" />
+                            <DatePicker id="dob" placeholder="Select Date of Birth" />
+
+                            <!-- <Label text="Gender" required="true" />
+                            <Select id="gender" placeholder="Select Gender">
+                                <core:Item key="male" text="Male" />
+                                <core:Item key="female" text="Female" />
+                                <core:Item key="other" text="Other" />
+                            </Select>  -->
+
+                            <Label text="Password" required="true" />
+                            <Input id="password" placeholder="Enter Password" type="Password"
+                                value="{password}" />
+
+                            <CheckBox id="agreeTerms"
+                                text="I accept the terms and conditions as well as privacy policy." />
+                        </f:content>
+                    </f:SimpleForm>
+                </VBox>
+            </FlexBox>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button id="saveButton" text="CREATE ACCOUNT" press="onSave" type="Success"
+                        icon="sap-icon://accept" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

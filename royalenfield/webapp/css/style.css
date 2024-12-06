@@ -1,0 +1,534 @@
+
+.contactUsVBox {
+    margin: 20px;
+}
+
+.introText {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    padding-left: 1vh;
+    margin-bottom: 20px;
+
+}
+
+.formSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.inputField {
+    width: 50%; /* Set to desired width percentage */
+    max-width: 600px; /* Optional: Set a maximum width */
+    margin-bottom: 40px;
+    border: 1px solid #fbff00;
+    border-radius: 3px;
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+
+/* .sendButton {
+    width: 100%;
+    background-color: #192ac2;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+} */
+
+.sendButton {
+    width: auto; /* Use auto to make the width fit the content */
+    background-color: #111d8a;
+    color: rgb(20, 33, 146);
+    padding: 8px 15px; /* Adjust padding to reduce size */
+    font-weight: bold;
+    font-size: 14px; /* Reduce font size */
+    border-radius: 6px;
+    cursor: pointer; /* Optional: Adds pointer cursor on hover */
+}
+
+
+.sendButton:focus {
+    outline: none;
+}
+
+.contactInfoSection {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.contactText {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.socialMedia {
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.socialMedia .sapMBtn {
+    background-color: #0070c500;
+    border-radius: 50%;
+    color: white;
+}
+
+.socialMedia .sapMBtn:hover {
+    background-color: #8f919200;
+}
+
+.socialMedia .sapMBtn:focus {
+    outline: none;
+}
+
+
+
+/* Custom Header styling */
+.customHeaderToolbar {
+    height: 100px; /* Increase the height of the header */
+    padding: 0 10px; /* Optional: Add padding to the left and right */
+}
+
+/* Adjust the font size of the page title */
+.pageTitle {
+    font-size: 32px; /* Increase the font size for the title */
+    font-weight: bold;
+    color: #192ac2; /* You can set any color for the title */
+}
+
+/* If you want to adjust the header text size directly for any specific text like 'Contact Us' */
+.headerText {
+    font-size: 25px; /* Set the desired font size */
+    font-weight: bold;
+    color: #192ac2; /* Set the color of the header text */
+    padding-left: 20px;
+    padding-top: 15px;
+    
+}
+
+/* Full-page animation for the bike image */
+.movingBike {
+    position: absolute;
+    top: 30%; /* Adjust the vertical position as needed */
+    left: -100px; /* Start the bike off-screen */
+    animation: moveBikeAcross 20s linear infinite;
+}
+
+@keyframes moveBikeAcross {
+    0% {
+        left: -100px; /* Start off-screen on the left */
+    }
+    100% {
+        left: 100%; /* Move off-screen to the right */
+    }
+}
+
+/* .bike12{
+    background-color: #111d8a solid 1px;
+} */
+
+.head1{
+    background-color: #fbff00;
+}
+
+.customHeaderWithSpace {
+    margin-bottom: 100px; /* Adjust the value to increase/decrease the space */
+}
+
+.contentleft{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+   
+}
+
+.customTile .sapMTileHdr {
+    text-align: center; /* Horizontally center the header */
+    vertical-align: middle; /* Vertically align the text */
+    display: inline-block; /* Ensures proper vertical centering */
+    width: 100%;
+    line-height: normal; /* Adjust spacing if needed */
+}
+
+.customImage {
+    position: relative;
+    top: -30px; /* Adjust the value to move the image upwards */
+}
+
+.titleText {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Text color */
+    text-align: center; 
+    position: relative;
+    margin-bottom: 20px; /* Space below the text */
+    padding-top: 10px;
+}
+
+.titleText:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background-color: red; 
+    margin-top: 5px; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bike{
+    padding: 0;
+    margin-left: -195px;
+    width: 500px;
+}
+
+.bikeForm{
+    margin-left: 200px;
+    width: 30%;
+    
+}
+
+.label1{
+    margin-right: 100px;
+}
+
+.field{
+    margin-right: 50px;
+    height: 20px;
+}
+
+.labelField{
+    margin-bottom: 20px;
+    
+}
+
+.Field{
+    margin-top: 20px;
+}
+
+
+.formBox{
+    padding-bottom:1rem;
+    height: 10px;
+}
+
+
+
+.categoriesSection {
+    width: 25%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    
+}
+
+.categoryHeader {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.faqSection {
+    width: 75%;
+    padding: 1rem;
+}
+
+.faqHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.sapMPanel {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General Page Styling */
+.Page {
+    background-color: #f5f5f5;
+    height: 100%;
+    padding: 16px;
+    font-family: "Arial", sans-serif;
+}
+
+/* Header Styling */
+.headerBar {
+    background-color: #333333;
+    color: white;
+}
+
+.headerBar .Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+/* Categories Section */
+.categoriesSection {
+    width: 25%;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.categoryHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.categoriesSection .List {
+    padding: 0;
+}
+
+.categoriesSection .StandardListItem {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.categoriesSection .StandardListItem:hover {
+    background-color: #e0e0e0;
+}
+
+/* FAQ Section */
+.faqSection {
+    width: 70%;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.faqHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.Panel {
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Panel .sapMPanelHeader {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+.Panel .Text {
+    padding: 8px;
+    color: #555555;
+}
+
+/* Contact Info Section */
+.contactInfoSection {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.contactText {
+    margin-bottom: 4px;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+/* Social Media Section */
+.socialMedia {
+    margin-top: 16px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.socialMedia .Button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.socialMedia .Button:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.socialMedia .Button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* General Page Styling */
+.Page {
+    background-color: #f5f5f5;
+    height: 100%;
+    padding: 16px;
+    font-family: "Arial", sans-serif;
+}
+
+/* Header Styling */
+.headerBar {
+    background-color: #333333;
+    color: white;
+}
+
+.headerBar .Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+/* Categories Section */
+.categoriesSection {
+    width: 25%;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.categoryHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.categoriesSection .List {
+    padding: 0;
+}
+
+.categoriesSection .StandardListItem {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.categoriesSection .StandardListItem:hover {
+    background-color: #e0e0e0;
+}
+
+/* FAQ Section */
+.faqSection {
+    width: 70%;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.faqHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.Panel {
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Panel .sapMPanelHeader {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+.Panel .Text {
+    padding: 8px;
+    color: #555555;
+}
+
+/* Contact Info Section */
+.contactInfoSection {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.contactText {
+    margin-bottom: 4px;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+/* Social Media Section */
+.socialMedia {
+    margin-top: 16px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.socialMedia .Button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.socialMedia .Button:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.socialMedia .Button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.footerSectionfaq {
+
+    color: white;
+    padding: 16px;
+    margin-top: 150px;
+    text-align: center;
+    border-top: 2px solid #e0e0e0;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.customHeaderLogo {
+    margin-right: 8px; /* Space between logo and text */
+}
+
+
+
+.chatusicon{
+    width: 150px; 
+    height: 150px;
+    font-size: 20px; 
+}

@@ -1,0 +1,142 @@
+<mvc:View
+    controllerName="ns.royalenfield.controller.REFAQ"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page class="faqpage">
+     
+        <customHeader>
+            <Bar>
+                <contentLeft>
+                    <Image 
+                        src="{i18n>RELogo}"
+                        alt="Royal Enfield Logo" 
+                        width="100%" height="100%" />
+                        <Text text="Frequently Asked Questions" />
+                </contentLeft>
+            </Bar>
+        </customHeader>
+
+        <!-- Content Section -->
+        <content>
+            <HBox>
+                <!-- Categories Section -->
+                <VBox class="categoriesSection">
+                    <Text text="Categories" class="categoryHeader" />
+                    <List>
+                        <StandardListItem title="Pick a Category" type="Inactive" />
+                        <StandardListItem title="Motorcycles" type="Navigation"
+                            press=".onSelectMotorCycle" />
+                        <StandardListItem title="Safety" type="Navigation" press=".onSelectSafety" />
+                        <StandardListItem title="Customer Service" type="Navigation"
+                            press=".onSelectCustomerService" />
+                        <StandardListItem title="General" type="Navigation"
+                            press=".onCategorySelect" />
+                    </List>
+                </VBox>
+
+                <!-- FAQ Section (Dynamic) -->
+                <VBox id="faqSection" class="faqSection">
+                    <!-- Motorcycles FAQ (Initially hidden) -->
+                    <VBox id="motorcycleFaq" visible="false">
+                        <Text text=" MotorCycles " class="faqHeader" />
+                        <Panel expandable="true" expanded="false"
+                            headerText="Which Royal Enfield motorcycle is perfect for me?">
+                            <Text
+                                text="Our motorcycles differ in many ways as each offers a different experience, while providing the signature Royal Enfield riding pleasure. You can explore our range, book a test ride and select the motorcycle that’s best for you by walking in to a Royal Enfield store near you." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="Where can I buy a Royal Enfield motorcycle from?">
+                            <Text
+                                text="Across the world, we have stores in over 50 countries. They are well equipped to provide you support and guidance to ride a Royal Enfield motorcycle of your choice. All you need to do is walk in to a Royal Enfield store near you." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="What is the frame number of my motorcycle?">
+                            <Text
+                                text="The frame number of your Royal Enfield motorcycle is punched on the steering head on the right side." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="What is the engine number of my motorcycle?">
+                            <Text
+                                text="The engine number of your Royal Enfield motorcycle is punched on the left side of the crank case" />
+                        </Panel>
+                    </VBox>
+
+                    <!-- Safety FAQ (Initially hidden) -->
+                    <VBox id="safetyFaq" visible="false">
+                        <Text text=" Safety  " class="faqHeader" />
+                        <Panel expandable="true" expanded="false"
+                            headerText="What does the warning sign mean?">
+                            <Text
+                                text="The warning sign indicates a hazardous situation. Please do not ignore this message. Consult a Royal Enfield authorized service centre immediately." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="How long can I drive while the warning sign flashes?">
+                            <Text
+                                text="We recommend that you do not ride the motorcycle and show it to the nearest Royal Enfield authorized service center at the earliest." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="What are the checks that I have to do before I start my motorcycle?">
+                            <Text
+                                text="Check for the petrol levels and or any kind of leakage. Check for play in the front and rear brake levels. Check the steering for free motion. Check operation of all electrical equipment. Check if the engine oil levels are between MAX and MIN. Start the engine, run it for 2 minutes before checking the engine oil. For all queries, we recommend you visit a Royal Enfield authorized service center." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="What is the fastest that I can ride my motorcycle?">
+                            <Text
+                                text="We recommend that you don’t ride over 60kmph until the first 500kms of your bike and over 70kmph until the first 2000kms" />
+                        </Panel>
+                    </VBox>
+
+                    <!-- Customer Service FAQ (Initially hidden) -->
+                    <VBox id="customerServiceFaq" visible="false">
+                        <Text text=" Customer Service " class="faqHeader" />
+                        <Panel expandable="true" expanded="false"
+                            headerText="Is there a customer service number that I can call for any assistance?">
+                            <Text
+                                text="For Roadside Assistance (RSA) (1800 2100 007) for availing RSA Assistance.
+                            For Customer Support (1800 2100 008) for availing Customer Support." />
+                        </Panel>
+                    </VBox>
+
+                    <!-- General FAQ (Initially visible) -->
+                    <VBox id="generalFaq" visible="true">
+                        <Text text="General" class="faqHeader" />
+                        <Panel expandable="true" expanded="false"
+                            headerText="When was Royal Enfield established?">
+                            <Text
+                                text="The Enfield Cycle Company made motorcycles, bicycles, lawnmowers, and stationary engines under the name Royal Enfield..." />
+                        </Panel>
+                        <Panel expandable="true" expanded="false"
+                            headerText="Where are Royal Enfield’s factories based?">
+                            <Text
+                                text="The Royal Enfield primary factory is located in the Chennai suburb of Oragadam. The secondary factory is located in nearby place called Vallam Vadagal." />
+                        </Panel>
+                    </VBox>
+                </VBox>
+            </HBox>
+
+            <!-- Footer Section -->
+            <VBox class="footerSectionfaq">
+                <!-- Static Contact Info Section -->
+                <VBox class="contactInfoSectionfaq">
+                    <Text text="Royal Enfield - A Unit Of Eicher Motors Ltd." class="contactText" />
+                    <Text text="Plot #96, Institutional Area, Sector-32" class="contactText" />
+                    <Text text="Gurgaon, HARYANA 122001, India" class="contactText" />
+                    <Text
+                        text="Phone: 1800-210-0008 (Our hours are 9 am - 9 pm IST, Monday - Sunday)"
+                        class="contactText" />
+                    <Text text="Email: support@royalenfield.com" class="contactText" />
+                </VBox>
+
+                <!-- Social Media Section -->
+                <HBox class="socialMedia">
+                    <Button icon="img/facebook.png" tooltip="Facebook" press="onFacebookPress" />
+                    <Button icon="img/twitter.png" tooltip="Twitter" press="onTwitterPress" />
+                    <Button icon="img/instagram.png" tooltip="Instagram" press="onInstagramPress" />
+                    <Button icon="img/youtube.png" tooltip="YouTube" press="onYouTubePress" />
+                </HBox>
+            </VBox>
+
+
+        </content>
+    </Page>
+</mvc:View>
