@@ -10,7 +10,7 @@
                     <!-- Centered Logo -->
                     <Image 
                         src="{i18n>RELogo}"
-                        alt="Royal Enfield Logo" 
+                        alt="Royal Enfield " 
                         width="100%" height="100%" />
                         <Image src="img/re3.png" width="50px" class="movingBike" />
                 </contentMiddle>
