@@ -1,0 +1,177 @@
+<mvc:View
+    xmlns:layout="sap.ui.layout"
+    controllerName="ns.royalenfield.controller.RoyalEnfield"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+        <Page id="page">
+            <customHeader>
+            <Bar>
+                <contentMiddle>
+                    <!-- Centered Logo -->
+                    <Image 
+                        src="{i18n>RELogo}"
+                        width="100%" height="100%" />
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+            <content>     
+
+<!-- Royal Enfield Tile Start-->
+
+<!-- Customer -->
+                    <GenericTile id="_IDGenGenericTile1"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalCustomer"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent1">
+                                <Text id="_IDGenText1" text="Account Creation" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+<!-- Book a Test Ride  -->
+                   <GenericTile id="_IDGenGenericTile2"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRETestRide"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent2">
+                                <Text id="_IDGenText2" text="Book a Test Ride" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- Become a Dealer -->
+                    <GenericTile id="_IDGenGenericTile3"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalBecomeDealer"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent3">
+                                <Text id="_IDGenText3" text="Become a Dealer" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- Contact Us -->
+                    <GenericTile id="_IDGenGenericTile4"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalContactUs"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent4">
+                                <Text id="_IDGenText4" text="Contact Us" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- Store Locator -->
+                    <GenericTile id="_IDGenGenericTile5"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalStoreLocator"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent5">
+                                <Text id="_IDGenText5" text="Store Locator" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- Service Centre Locator -->
+
+                    <GenericTile id="_IDGenGenericTile6"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalServiceCentreLocator"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent6">
+                                <Text id="_IDGenText6" text="Service Centre Locator" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+
+<!-- BulK Order -->
+                    <GenericTile id="_IDGenGenericTile7"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalBulkOrder"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent7">
+                                <Text id="_IDGenText7" text="BulK Order" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- Warrenty Claim -->
+                    <GenericTile id="_IDGenGenericTile8"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalWarrenty"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent8">
+                                <Text id="_IDGenText8" text="Warrenty Claim" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- Chat Bot - Support -->
+                    <GenericTile id="_IDGenGenericTile9"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalChat"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent9">
+                                <Text id="_IDGenText9" text="Chat" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+
+<!-- FAQ -->
+                    <GenericTile id="_IDGenGenericTile10"
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout "
+                        header="Royal Enfield"
+                        width="15%"
+                        press=".onNavRoyalFaq"
+                    
+                    >
+                        <tileContent>
+                            <TileContent id="_IDGenTileContent10">
+                                <Text id="_IDGenText10" text="FAQ" />
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+<!-- RE end -->
+
+            </content>
+        </Page>
+</mvc:View>
